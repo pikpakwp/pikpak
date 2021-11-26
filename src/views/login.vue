@@ -25,7 +25,7 @@
           <n-form-item label="">
             <a target="_blank" href="https://i.mypikpak.com/v1/file/center/account/v1/password/?type=forget_password&locale=zh-cn" class="forget-password">忘记密码</a>
             
-            <a href="javascript:;" @click="getApk">下载安卓APP注册</a>
+            <a target="_blank" href="https://yunsoft.lanzoui.com/i3NGPwxnjob">下载安卓APP注册</a>
           </n-form-item>
         </n-form>
         <n-tooltip >
@@ -99,7 +99,7 @@ const showMessage = () => {
   }
 }
 const getApk = () => {
-  http.get('https://yunsoft.lanzoui.com/i3NGPwxnjob')
+  http.get('https://api-drive.mypikpak.com/package/v1/apk/url/860607')
     .then((res:any) => {
       window.open(res.data.apk_url)
     })
