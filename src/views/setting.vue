@@ -57,7 +57,7 @@
       </n-collapse-item>
       <n-collapse-item title="关于" name="2">
         <n-space>
-          <a href="https://mypikpak.com/" target="_blank" class="n-button">官方网站</a>
+          <a href="https://pikpakwp.github.io/pikpak/" target="_blank" class="n-button">官方网站</a>
        </n-space>
         <br />
       </n-collapse-item>
