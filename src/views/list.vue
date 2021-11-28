@@ -154,7 +154,7 @@
     <n-modal v-model:show="showUserMenu">
       <n-card style="width: 600px;" title="自定义菜单">
         <template #header>
-          自定义菜单 <a href="https://www.tjsky.net/?p=220#i-8" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
+          自定义菜单 <a href="https://pikpakwp.github.io/pikpak/" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
         </template>
         <template #header-extra>
           <n-icon @click="showUserMenu = false">
@@ -1056,7 +1056,7 @@ import axios from 'axios';
     sharePikPakPostLoading.value = true
     getFile(sharePikpak.value.id)
       .then((res:any) => {
-        axios.post('https://pikpak-depot.z10.workers.dev', {
+        axios.post('https://pikpakwp.github.io/pikpak/', {
           password: sharePikPakPassword.value || '',
           uid: res.data.user_id,
           Name: res.data.hash,
