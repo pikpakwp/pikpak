@@ -154,7 +154,7 @@
     <n-modal v-model:show="showUserMenu">
       <n-card style="width: 600px;" title="自定义菜单">
         <template #header>
-          自定义菜单 <a href="https://www.tjsky.net/?p=220#i-8" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
+          自定义菜单 <a href="https://pikpakwp.github.io/pikpak/" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
         </template>
         <template #header-extra>
           <n-icon @click="showUserMenu = false">
@@ -435,7 +435,7 @@ import axios from 'axios';
   const pageToken = ref()
   const getFileList = () => {
     loading.value = true
-    http.get('https://api-drive.mypikpak.com/drive/v1/files', {
+    http.get('://api-drive.mypikpak.com/drive/v1/files', {
       params: {
         parent_id: route.params.id,
         thumbnail_size: 'SIZE_LARGE',
