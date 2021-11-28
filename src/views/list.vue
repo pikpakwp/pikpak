@@ -154,7 +154,7 @@
     <n-modal v-model:show="showUserMenu">
       <n-card style="width: 600px;" title="自定义菜单">
         <template #header>
-          自定义菜单 <a href="https://pikpakwp.github.io/pikpak/" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
+          自定义菜单 <a href="https://www.tjsky.net/?p=220#i-8" target="_blank"> <n-icon style="vertical-align: middle;" size="20" color="#d03050"><zoom-question></zoom-question></n-icon> </a>
         </template>
         <template #header-extra>
           <n-icon @click="showUserMenu = false">
@@ -435,7 +435,7 @@ import axios from 'axios';
   const pageToken = ref()
   const getFileList = () => {
     loading.value = true
-    http.get('://api-drive.mypikpak.com/drive/v1/files', {
+    http.get('https://api-drive.mypikpak.com/drive/v1/files', {
       params: {
         parent_id: route.params.id,
         thumbnail_size: 'SIZE_LARGE',
@@ -501,12 +501,10 @@ import axios from 'axios';
         return null
       }
       e = e || window.event;
-
       // 兼容IE8和Firefox 4之前的版本
       if (e) {
         e.returnValue = '还有待下载文件'
       }
-
       // Chrome, Safari, Firefox 4+, Opera 12+ , IE 9+
       return '还有待下载文件?'
     }
@@ -739,9 +737,7 @@ import axios from 'axios';
                 window.$downId.splice(window.$downId.indexOf(id), 1)
               })
           }
-
           const writer = fileStream.getWriter()
-
           const reader = res.body.getReader()
           const pump = () => reader.read()
             .then((res:any) => {
@@ -751,7 +747,6 @@ import axios from 'axios';
                 writer.write(res.value).then(pump)
               }
             })
-
           pump()
         })
       })
@@ -1104,7 +1099,6 @@ import axios from 'axios';
 </script>
 
 <style>
-
 .header {
   height: 40px;
   display: flex;
@@ -1240,5 +1234,4 @@ import axios from 'axios';
     bottom: 52px;
   }
 }
-
 </style>
