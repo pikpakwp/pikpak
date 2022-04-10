@@ -25,7 +25,7 @@
           <n-form-item label="">
             <a target="_blank" href="https://i.mypikpak.com/v1/file/center/account/v1/password/?type=forget_password&locale=zh-cn" class="forget-password">忘记密码</a>
             
-            <a target="_blank" href="https://baka.link/9e1p">下载安卓APP注册</a>
+            <a target="_blank" href="https://baka.link/gdv0">下载安卓APP注册</a>
           </n-form-item>
         </n-form>
         <n-tooltip >
